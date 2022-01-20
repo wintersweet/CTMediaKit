@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		23BC1F05E7FD55BDC8B5A439 /* Pods_CTMediaKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTMediaKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C402DBF3BC08435A87AB59F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3C402DBF3BC08435A87AB59F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		45ABD9FD6B04E2309FCFE720 /* Pods_CTMediaKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTMediaKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CTMediaKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTMediaKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,8 +61,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75C04595BF0B20AB843FF1F8 /* Pods-CTMediaKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTMediaKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-CTMediaKit_Example/Pods-CTMediaKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		807B07EF21742CEAB9E11200 /* CTMediaKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CTMediaKit.podspec; path = ../CTMediaKit.podspec; sourceTree = "<group>"; };
-		864C58BD9AC2F861DE841234 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		807B07EF21742CEAB9E11200 /* CTMediaKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CTMediaKit.podspec; path = ../CTMediaKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		864C58BD9AC2F861DE841234 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		976ED762DE8F49B3DAE42192 /* Pods-CTMediaKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTMediaKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CTMediaKit_Tests/Pods-CTMediaKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D543711DF5050CA2B654BE9 /* Pods-CTMediaKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTMediaKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-CTMediaKit_Tests/Pods-CTMediaKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				976ED762DE8F49B3DAE42192 /* Pods-CTMediaKit_Tests.debug.xcconfig */,
 				9D543711DF5050CA2B654BE9 /* Pods-CTMediaKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,10 +325,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CTMediaKit_Example/Pods-CTMediaKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CTMediaKit/CTMediaKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediaKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

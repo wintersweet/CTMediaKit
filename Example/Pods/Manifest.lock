@@ -1,0 +1,23 @@
+PODS:
+  - CTMediaKit (0.1.0):
+    - CTMediator
+  - CTMediator (46)
+
+DEPENDENCIES:
+  - CTMediaKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CTMediator
+
+EXTERNAL SOURCES:
+  CTMediaKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediaKit: b6842ef3440687ded8b7d95d10e4b24569a13c1e
+  CTMediator: f1cf58d509fb3192086c367711f039efd769b907
+
+PODFILE CHECKSUM: 9a28fa5786f6eacd8644caf37013425d01ef9f7b
+
+COCOAPODS: 1.11.2

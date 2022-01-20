@@ -1,0 +1,6 @@
+framework module Pods_CTMediaKit_Tests {
+  umbrella header "Pods-CTMediaKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
